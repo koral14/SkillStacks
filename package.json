@@ -4,7 +4,7 @@
   "description": "Back-End Repo for Team 4 of Echidna/Emu Practicum",
   "main": "app.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node src/server.js",
     "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}"
   },
   "author": "",
