@@ -1,5 +1,5 @@
 require('dotenv').config();
-const PORT = `https://skillstacks.onrender.com` || 8000;
+const PORT = process.env.REACT_APP_REACT_URL || 8000;
 const app = require("./app");
 const connectDB = require('./db/connect');
 
