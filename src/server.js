@@ -1,5 +1,5 @@
 require('dotenv').config();
-const PORT = 8000;
+const PORT = `https://skillstacks.onrender.com/api/v1` || 8000;
 const app = require("./app");
 const connectDB = require('./db/connect');
 
