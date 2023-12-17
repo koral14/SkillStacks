@@ -27,7 +27,8 @@ const notFoundMiddleware = require('./middleware/not-found');
 
 // middleware
 app.use(cors({
-    origin: process.env.FLASHCARDS_API_BASE_URL,
+    // origin: process.env.FLASHCARDS_API_BASE_URL,
+    origin: 'https://cookyummi.onrender.com',
     credentials: true,
 }));
 app.use(express.json());
