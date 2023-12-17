@@ -1,5 +1,5 @@
 require('dotenv').config();
-const PORT = process.env.REACT_APP_REACT_URL || 8000;
+const PORT = 8000 || process.env.REACT_APP_REACT_URL;
 const app = require("./app");
 const connectDB = require('./db/connect');
 
