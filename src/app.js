@@ -28,9 +28,13 @@ const notFoundMiddleware = require('./middleware/not-found');
 // middleware
 app.use(cors({
     // origin: process.env.FLASHCARDS_API_BASE_URL,
-    origin: 'https://cookyummi.onrender.com',
+    origin: 'https://skillstacks.onrender.com',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
 }));
+
+app.options('*', cors());
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(logger('dev'));
