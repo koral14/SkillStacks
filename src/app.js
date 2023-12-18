@@ -27,8 +27,8 @@ const notFoundMiddleware = require('./middleware/not-found');
 
 // middleware
 app.use(cors({
-    // origin: process.env.FLASHCARDS_API_BASE_URL,
-    origin: 'https://skillstacks-front.onrender.com',
+    origin: process.env.FLASHCARDS_API_BASE_URL,
+    // origin: 'https://skillstacks-front.onrender.com',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
 }));
