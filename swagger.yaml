@@ -4,7 +4,7 @@ info:
   version: 1.0.0
   description: An Express Flashcards API
 servers:
-  - url: ${process.env.REACT_APP_REACT_URL}
+  - url: ${process.env.REACT_APP_API_BASE_URL}
     variables: {}
 paths:
   /api/v1/user/register:
